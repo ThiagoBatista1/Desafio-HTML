@@ -1,95 +1,187 @@
 <html>
-    <head>
-        <title>Desfio HTML</title>
-    </head>
-    <body>
-        <header>
-            <img src="assets/nova logo tb p.png" width="70">
-        </header>
-        <h1 id="voltar">Primeiros passos com HTML</h1>
+
+<head>
+    <title>Desfio HTML</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/nova logo tb p.png" width="70">
+    </header>
+    <h1 id="voltar">
+        <font color="#0068ff">Primeiros passos com HTML</font>
+    </h1>
+    <hr>
+    <h2>
+        <font color="#0068ff">Índice</font>
+    </h2>
+    <ol>
+        <li><a href="#intro">Introdução</a></li>
+        <li><a href="#facilitarD">Ferramentas para Facilitar o Desenvolvimento</a></li>
+        <li><a href="#conceitoTA">Conceito de Tag e Atributo</a></li>
+        <li><a href="#texto">Construção do Texto</a></li>
+        <li><a href="#lista">Listas</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#ref">Referência</a></li>
+    </ol>
+    <hr>
+    <ol>
+        <li>
+            <h3 id="intro">
+                <font color="#0068ff">Introdução</font>
+            </h3>
+            <h6><small><a href="#voltar"> Retornar ao Inicio</a></small></h6>
+            <p>
+                No contexto da web, o cliente (client) é o lado que consome informações, geralmente
+                representado pelo navegador web que utilizamos para acessar os sites. Por outro lado,
+                o servidor (server) é o lado que serve essas informações para o cliente, armazenando e
+                processando os dados solicitados. A comunicação entre eles é feita através da internet,
+                o cliente (client) manda uma requisição <abbr style="color: brown;"> HTTP</abbr> <sub>(Hypertext
+                    Transfer Protocol)</sub> e o servidor (server)
+                retorna o <abbr style="color: brown;"> HTML</abbr> <sub>(Hypertext Markup Language)</sub>, <abbr
+                    style="color: brown;">CSS</abbr> <sub>(Cascading Style Sheets)</sub> , Javascript, e etc. É
+                importante entender essa dinâmica para compreender
+                como as páginas da web são carregadas e exibidas para os usuários. Uma das ferramentas usadas
+                no universo web é o <abbr style="color: brown;">HTML</abbr>, que não é uma linguagem de programação,
+                mas sim uma linguagem de marcação que utiliza textos delimitados (tags) para criar documentos
+                estruturados que os navegadores podem interpretar e exibir aos usuários. Cada tag tem uma função
+                e comportamento específico, permitindo a criação de diferentes elementos em uma página web.
+            </p>
+        </li>
         <hr>
-        <h2>Índice</h2>
-        <ul>
-            <li><a href="#intro">Introdução</a></li>
-            <li><a href="#facilitarD">Ferramentas para Facilitar o Desenvolvimento</a></li>
-            <li><a href="#conceitoTA">Conceito de Tag e Atributo</a></li>
-            <li><a href="#texto">Construção do Texto</a></li>
-            <li><a href="#lista">Listas</a></li>
-            <li><a href="#links">Links</a></li>
-        </ul>
-        <h2 id="intro">Introdução</h2>
-        <small><a href="#voltar"> Retornar ao Inicio</a></small>
-        <p>
-            No contexto da web, o cliente (client) é o lado que consome informações, geralmente 
-            representado pelo navegador web que utilizamos para acessar os sites. Por outro lado, 
-            o servidor (server) é o lado que serve essas informações para o cliente, armazenando e 
-            processando os dados solicitados. A comunicação entre eles é feita através da internet, 
-            o cliente (client) manda uma requisição http (hypertext transfer protocol) e o servidor (server) 
-            retorna o HTML, CSS, Javascript, e etc. É importante entender essa dinâmica para compreender 
-            como as páginas da web são carregadas e exibidas para os usuários. Uma das ferramentas usadas 
-            no universo web é o HTML (hypertext markup language), que não é uma linguagem de programação, 
-            mas sim uma linguagem de marcação que utiliza textos delimitados (tags) para criar documentos 
-            estruturados que os navegadores podem interpretar e exibir aos usuários. Cada tag tem uma função 
-            e comportamento específico, permitindo a criação de diferentes elementos em uma página web.
-        </p>
-        <h2 id="facilitarD">Ferramentas para Facilitar o Desenvolvimento</h2>
-        <small><a href="#voltar"> Retornar ao Inicio</a></small>
-        <p>
-            Ao iniciar o desenvolvimento de uma página web, é essencial contar com ferramentas que facilitem 
-            o processo. A inspeção de elementos (tecla F12 no Windows) permite examinar e depurar o código em 
-            tempo real. A extensão Live Server no Visual Studio Code oferece a conveniência de visualizar as 
-            alterações no HTML em tempo real. O uso do padrão "Index" para nomear a página inicial do projeto 
-            simplifica a navegação. Essas ferramentas facilitam o desenvolvimento, proporcionando um ambiente 
-            mais produtivo.
-        </p>
-        <h2 id="conceitoTA">Conceito de Tag e Atributo</h2>
-        <small><a href="#voltar"> Retornar ao Inicio</a></small>
-        <p>
-            As tags são elementos fundamentais no HTML, formados por um sinal de menor e um de maior, com 
-            uma palavra entre eles representando o nome da tag. O HTML é dividido em três partes principais: 
-            <strong><u>html</u></strong>, <strong><u>head</u></strong> e <strong><u>body</u></strong> , sendo o <strong><u>body</u></strong>  responsável por tudo o que é exibido para o usuário. As 
-            tags podem ter atributos, esses atributos podem ser divididos como genéricos ou específicos, 
-            os genéricos são atributos que toda tag pode ter, como por exemplo <strong>id</strong> , <strong>style</strong>  e <strong>class</strong>, 
-            que permitem definir propriedades específicas ou identificadores para os elementos. Já os 
-            atributos específicos, são atributos que tags em específico pode ter, como por exemplo <strong>type</strong> , 
-            <strong>src</strong> e <strong>width</strong>, que têm diferentes finalidades e funcionalidades.
-        </p>
-        <h2 id="texto">Construção do Texto</h2>
-        <small><a href="#voltar"> Retornar ao Inicio</a></small>
-        <p>
-            Para formatar o texto em uma página HTML, utilizamos uma variedade de tags, como <strong><u> h1 </u></strong>  a <strong><u>h6 </u></strong> 
-            para títulos de diferentes níveis de importância, <strong><u>p</u></strong> para parágrafos, <strong><u>blockquote</u></strong> para 
-            citações, <strong><u>u</u></strong> para sublinhar, <strong><u>mark</u></strong> para destacar com uma cor de fundo, <strong><u>sup</u></strong> para itens 
-            elevados, <strong><u>hr</u></strong> para criar uma linha horizontal e <strong><u>small</u></strong> para texto em tamanho reduzido. 
-            É possível encontrar uma referência completa dessas e outras tags no site <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools</a> , que é 
-            uma fonte valiosa de informações para desenvolvedores web.
-        </p>
-        <h2 id="lista">Listas</h2>
-        <small><a href="#voltar">Retornar ao Inicio</a></small>
-        <p>
-            As listas em HTML podem ser ordenadas <strong><u>(ol)</u></strong>  ou não ordenadas <strong><u>(ul)</u></strong> , e ambas podem conter 
-            itens representados pela tag <strong><u>li</u></strong> . Nas listas ordenadas, os itens são numerados automaticamente 
-            de acordo com a ordem em que são inseridos, enquanto nas não ordenadas, são utilizados marcadores 
-            para cada item. É possível criar listas aninhadas, ou seja, listas dentro de itens de outras 
-            listas, para organizar e estruturar o conteúdo de forma hierárquica.
-        </p>
-        <h2 id="links">Links</h2>
-        <small><a href="#voltar">Retornar ao Inicio</a></small>
-        <p>
-            Os links em HTML são criados com a tag <strong><u>a</u></strong>, que possui o atributo href para especificar o 
-            destino do link, como uma URL externa ou uma página interna do mesmo site. O atributo 
-            <strong>target</strong>  determina se o link será aberto na mesma guia <strong>(_self)</strong>  ou em uma nova guia <strong>(_blank)</strong>. 
-            Além disso, o atributo title pode ser utilizado para exibir uma mensagem ao passar o 
-            mouse sobre o link. Também é possível ancorar links para partes específicas de uma página 
-            utilizando IDs, o que permite aos usuários navegar facilmente dentro do mesmo documento HTML.
-        </P>  
-        <hr> 
+        <li>
+            <h3 id="facilitarD">
+                <font color=#0068ff>Ferramentas para Facilitar o Desenvolvimento</font>
+            </h3>
+            <h6><small><a href="#voltar"> Retornar ao Inicio</a></small></h6>
+            <p>
+                Ao iniciar o desenvolvimento de uma página web, é essencial contar com ferramentas que facilitem
+                o processo. A inspeção de elementos (tecla F12 no Windows) permite examinar e depurar o código em
+                tempo real. A extensão Live Server no Visual Studio Code oferece a conveniência de visualizar as
+                alterações no <abbr style="color: brown;">HTML</abbr> <sub>(Hypertext Markup Language)</sub> em tempo
+                real. O uso do padrão "Index" para nomear a página inicial do projeto
+                simplifica a navegação. Essas ferramentas facilitam o desenvolvimento, proporcionando um ambiente
+                mais produtivo.
+            </p>
+        </li>
+        <hr>
+        <li>
+            <h3 id="conceitoTA">
+                <font color=#0068ff>Conceito de Tag e Atributo</font>
+            </h3>
+            <h6><small><a href="#voltar"> Retornar ao Inicio</a></small></h6>
+            <p>
+                As tags são elementos fundamentais no <abbr style="color: brown;">HTML</abbr> <sub>(Hypertext Markup
+                    Language)</sub>, formados por um sinal de menor e um de maior, com
+                uma palavra entre eles representando o nome da tag. O <abbr style="color: brown;">HTML</abbr> é dividido
+                em três partes principais:
+                <strong><u>html</u></strong>, <strong><u>head</u></strong> e <strong><u>body</u></strong> , sendo o
+                <strong><u>body</u></strong> responsável por tudo o que é exibido para o usuário. As
+                tags podem ter atributos, esses atributos podem ser divididos como genéricos ou específicos,
+                os genéricos são atributos que toda tag pode ter, como por exemplo <strong>id</strong> ,
+                <strong>style</strong> e <strong>class</strong>,
+                que permitem definir propriedades específicas ou identificadores para os elementos. Já os
+                atributos específicos, são atributos que tags em específico pode ter, como por exemplo
+                <strong>type</strong>
+                ,
+                <strong>src</strong> e <strong>width</strong>, que têm diferentes finalidades e funcionalidades.
+            </p>
+        </li>
+        <hr>
+        <li>
+            <h3 id="texto">
+                <font color=#0068ff>Construção do Texto</font>
+            </h3>
+            <h6><small><a href="#voltar"> Retornar ao Inicio</a></small></h6>
+            <p>
+                Para formatar o texto em uma página <abbr style="color: brown;">HTML</abbr> <sub>(Hypertext Markup
+                    Language)</sub>, utilizamos uma variedade de tags, como <strong><u> h1
+                    </u></strong> a <strong><u>h6 </u></strong>
+                para títulos de diferentes níveis de importância, <strong><u>p</u></strong> para parágrafos,
+                <strong><u>blockquote</u></strong> para
+                citações, <strong><u>u</u></strong> para sublinhar, <strong><u>mark</u></strong> para destacar com uma
+                cor
+                de fundo, <strong><u>sup</u></strong> para itens
+                elevados, <strong><u>hr</u></strong> para criar uma linha horizontal e <strong><u>small</u></strong>
+                para
+                texto em tamanho reduzido.
+                É possível encontrar uma referência completa dessas e outras tags no site <a
+                    href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools</a> , que é
+                uma fonte valiosa de informações para desenvolvedores web.
+            </p>
+        </li>
+        <hr>
+        <li>
+            <h3 id="lista">
+                <font color=#0068ff>Listas</font>
+            </h3>
+            <h6><small><a href="#voltar">Retornar ao Inicio</a></small></h6>
+            <p>
+                As listas em <abbr style="color: brown;">HTML</abbr> <sub>(Hypertext Markup Language)</sub> podem ser
+                ordenadas <strong><u>(ol)</u></strong> ou não ordenadas
+                <strong><u>(ul)</u></strong> , e ambas podem conter
+                itens representados pela tag <strong><u>li</u></strong> . Nas listas ordenadas, os itens são numerados
+                automaticamente
+                de acordo com a ordem em que são inseridos, enquanto nas não ordenadas, são utilizados marcadores
+                para cada item. É possível criar listas aninhadas, ou seja, listas dentro de itens de outras
+                listas, para organizar e estruturar o conteúdo de forma hierárquica.
+            </p>
+        </li>
+        <hr>
+        <li>
+            <h3 id="links">
+                <font color=#0068ff>Links</font>
+            </h3>
+            <h6><small><a href="#voltar">Retornar ao Inicio</a></small></h6>
+            <p>
+                Os links em <abbr style="color: brown;">HTML</abbr> <sub>(Hypertext Markup Language)</sub> são criados
+                com a tag <strong><u>a</u></strong>, que possui o atributo href para
+                especificar o
+                destino do link, como uma <abbr style="color: brown;">URL</abbr> <sub>(Uniform Resource Locator)</sub>
+                externa ou uma página interna do mesmo site. O atributo
+                <strong>target</strong> determina se o link será aberto na mesma guia <strong>(_self)</strong> ou em uma
+                nova guia <strong>(_blank)</strong>.
+                Além disso, o atributo title pode ser utilizado para exibir uma mensagem ao passar o
+                mouse sobre o link. Também é possível ancorar links para partes específicas de uma página
+                utilizando <strong>IDs</strong> , o que permite aos usuários navegar facilmente dentro do mesmo
+                documento <abbr style="color: brown;">HTML</abbr>.
+            </P>
+        </li>
+        <hr>
+        <li>
+            <h4 id="ref">
+                <font color="#0068ff">Referência</font>
+            </h4>
+            <h6><small><a href="#voltar"> Retornar ao Inicio</a></small></h6>
+            <ul>
+                <li>
+                    <a href="https://web.dio.me/track/formacao-html-web-developer" target="_blank">Formação HTML Web
+                        Developer</a>
+                </li>
+                <li>
+                    <a href="https://www.techonthenet.com/html/elements/font_tag.php" target="_blank">HTML: tag
+                        <strong>font</strong> </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank">HTML: tag
+                        <strong>del</strong> </a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">HTML: tag
+                        <strong>abbr</strong> </a>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <h5>
         <blockquote>
             <mark>
                 <i>
-                "Existem 10 tipos de pessoas no mundo: as que entendem binário e as que não entendem."
+                    "Existem <del>2</del> 10 tipos de pessoas no mundo: as que entendem binário e as que não entendem."
                 </i>
             </mark>
-        </blockquote> 
-    </body>
+        </blockquote>
+    </h5>
+</body>
+
 </html>
